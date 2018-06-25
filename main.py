@@ -5,10 +5,10 @@ from flask import Flask, render_template, request
 import sqlite3 as sql
 app = Flask(__name__)
 
-server = 'quiz1db.database.windows.net'
+server = '####'
 database = 'course'
-username = 'rootkartik'
-password = 'Kartik123'
+username = '####'
+password = '###'
 driver = '{SQL Server}'
 cnxn = pyodbc.connect(
       'DRIVER=' + driver + ';SERVER=' + server + ';PORT=1443;DATABASE=' + database + ';UID=' + username + ';PWD=' + password)
